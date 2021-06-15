@@ -49,14 +49,16 @@
 	nav ul li a{
 		text-decoration: none;
 		color: #003191;
-		opacity: 0.75;
-		transition: opacity 0.2s ease;
-	}
-	nav ul li a:hover{
-		opacity:1;
-	}
 		
+	}
+	
+		@keyframes fadeInLeft{
+			0% {opacity: 0; transform: translateX(-25%);}
+			100% {opacity: 1; transform: translateX(0%);}
+		}
 		a { text-decoration:none !important } a:hover { color:pink; text-decoration:none !important }
+		
+		
 
 	/* -----------메뉴 내용 끝---------- */
 	   
@@ -85,8 +87,8 @@ div[class="sidebar"] {width:100%;height:90%;background:#999999;position:fixed;to
 	
 		/* -----------logo ani---------- */   
 		       img.scale-up-center {
-	-webkit-animation: scale-up-center 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
-	        animation: scale-up-center 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+	-webkit-animation: scale-up-center 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+	        animation: scale-up-center 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -152,7 +154,7 @@ div[class="sidebar"] {width:100%;height:90%;background:#999999;position:fixed;to
 		   text-align: left;
 	   }
 	   p.ds2{
-		   font-size: 13px;
+		   font-size: 15px;
 		  font-family: 'Noto Sans KR', sans-serif;
 		   line-height: 2.2;
 		   color: #555555;
@@ -163,15 +165,17 @@ div[class="sidebar"] {width:100%;height:90%;background:#999999;position:fixed;to
 	   
 		p.t1 {
 		   
-		   font-size: 30px;
-		   font-family: 'Nanum Myeongjo', serif;
-		   padding-left:20px;
-		   color: #444444;
-		
-		   writing-mode: vertical-rl;
-           text-orientation: upright;
-		   
+		   font-size: 35px;
+		   ffont-family: 'Montserrat', sans-serif;
+		   margin: auto;
+		   color: pink;
+			padding-bottom: 30px;
+		   text-align: center
 	   }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+	
 	   p.t2 {
 		   font-size: 30px;
 		   font-family: 'Nanum Myeongjo', serif;
@@ -186,10 +190,9 @@ div[class="sidebar"] {width:100%;height:90%;background:#999999;position:fixed;to
 		   font-family: 'Cormorant Garamond', serif;
 		   font-size: 13px;
 		   color: #DBDBDB;
-		   padding: 0;
-		   margin: 300px 0px 0px 0px;
 		   text-align: center;
-		   
+		   position: fixed; bottom: 0; width: 100%;
+
 	   }
 		
 	   img { display: block; margin: 0px auto; 
@@ -236,7 +239,7 @@ div[class="sidebar"] {width:100%;height:90%;background:#999999;position:fixed;to
 	<!--메뉴내용 끝-->
 		  
 		  <!--내용-->
-		  <div style="width: 100%; height: 35%;"></div>
+		  
 		  <div>
 			  <img class="scale-up-center" style="width: 110px;" src="1x/logo_S.png">
 			  
@@ -250,7 +253,8 @@ div[class="sidebar"] {width:100%;height:90%;background:#999999;position:fixed;to
 		  <section class="section">
 			  
 			  <div class="center" style="text-align: center">
-				  <p class="d1">안정성</p>
+				 
+				  
 				  <p class="ds2">
 				꽃차는 안전성을 인정받은 꽃에 대해서만 차(茶) 용도로 사용할 수 있다.시중에 판매하는 꽃 제품이라고 안심해서는 안된다. <br> 
 				식약처는 식품원료로 사용할 수 없는 꽃을 꽃차 제품으로 만들어 인터넷을 통해 판매하는 업체 46곳에 대한 기획단속을 실시한 결과, <br> 
