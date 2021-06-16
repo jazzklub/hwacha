@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>4.Mokryun</title>
+	<link rel="stylesheet" href="jquery.fullPage.css">
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	 <script src="jquery.fullPage.js"></script>	
+	<script src="main.js"></script>	
+	<script type="text/javascript">
+<!--
+// 주소창 자동 닫힘
+window.addEventListener("load", function(){
+setTimeout(loaded, 100);
+
+}, false);<img src="02.jpg" width="1271" height="1270" alt=""/>
+
+function loaded(){
+window.scrollTo(0, 1);
+}
+//-->
+</script>
+
+</head>
+
+<body>
+	<style> 
+		  /* -----------메뉴 내용 시작---------- */
+	  nav{
+		background: #fff;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height:100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+			
+	}
+	
+	nav a{
+		margin: 0px;
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 2
+	}
+	
+	 nav ul {
+		list-style:none;
+		padding: 0;
+		 margin:0;
+		 text-align: center;
+		 
+      }
+      
+	nav ul li{
+		margin: 1rem 0;
+		
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #003191;
+		
+	}
+
+		a { text-decoration:none !important } a:hover { color:pink; text-decoration:none !important }
+		
+		
+	/* -----------메뉴 내용 끝---------- */
+	   
+	   
+	/* -----------메뉴 아이콘 시작---------- */   
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {display:block;margin: 10px 20px 0px 0px;width:10px;height:23px;right:2%; top:3%; position:fixed;cursor:pointer;}
+input[id="menuicon"] + label span {display:block; position:absolute; width:100%; height:10px; border-radius:100px; background:#003191; transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {bottom: 0;} /*  */
+	input[id="menuicon"] + label span:nth-child(3) {top:0;}
+input[id="menuicon"] + label span:nth-child(4) {bottom: 0;} /*  */
+
+input[id="menuicon"]:checked + label {z-index:3;}
+input[id="menuicon"]:checked + label span {background:#003191;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(0%) rotate(0deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {bottom:50%;transform:translateY(0%) rotate(0deg);}
+	input[id="menuicon"]:checked + label span:nth-child(3) {top:50%;transform:translateX(50%) translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(4) {bottom:50%;transform:translateX(-50%) translateY(50%) rotate(45deg);}
+div[class="sidebar"] {width:100%;height:90%;background:#999999;position:fixed;top:-100%;right:0%;z-index:1;transition:all .45s;
+        box-shadow: 0px 0px 100px -8px #eaeaea;}
+	input[id="menuicon"]:checked + label + div {top:0;}
+	   
+	/* -----------메뉴 내용 끝---------- */   
+		
+	/* -----------내용---------- */  
+		
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');		
+
+		p.dt{
+		   font-size: 50px;
+		   font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+		   line-height: 1;
+		   color: #444444;
+			
+	   }
+		p.d1{
+		   font-size: 16px;
+		   font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700;
+		   line-height: 0.5;
+		   color: #444444;
+		   margin: 300, 0, 300, 0;
+			
+		  
+	   }
+	   p.d2{
+		   font-size: 15px;
+		   font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 100;
+		   
+		   color: #444444;
+		   margin-bottom: 40px;
+		   
+	   }
+	   p.d2R{
+		   font-size: 15px;
+		  font-family: 'Cormorant Garamond', serif;
+		   color: #444444;
+		   margin: 20px 20% 0px 15%;
+	   }
+	   p.d3{
+		   font-size: 12px;
+		  font-family: 'Nanum Myeongjo', serif;
+		   color: #444444;
+		   margin: 5px 50px 0px 15%;
+	   }
+	   
+	   p.ds1{
+		   font-size: 15px;
+		  font-family: 'Nanum Myeongjo', serif;
+		   color: #444444;
+		   margin: 0;
+		   padding: 0;
+		   text-align: center;
+	   }
+	   p.ds2{
+		   font-size: 12px;
+		  font-family: 'Nanum Myeongjo', serif;
+		   color: #444444;
+		   margin: 0;
+		   padding: 0;
+		   text-align: center;
+	   }
+	   
+		p.t1 {
+		   
+		   font-size: 30px;
+		   font-family: 'Nanum Myeongjo', serif;
+		   padding: 30px 0px 20px 20px;
+		   color: #444444;
+		   writing-mode: vertical-rl;
+           text-orientation: upright;
+		   
+	   }
+		@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1,300&display=swap');
+		
+		p.t1a {
+		   font-size: 30px;
+		   font-family: 'Cormorant Garamond', serif;
+			font-weight: 300;
+			font-style: italic;
+		   padding: 0px 0px 20px 20px;
+		   color: #ACACAC;
+		   writing-mode: vertical-rl;
+           text-orientation: upright;
+		   
+	   }
+	   p.t2 {
+		   font-size: 30px;
+		   font-family: 'Nanum Myeongjo', serif;
+		   color: #444444;
+		  
+		   margin: 20px 60px 20px 0px;
+		   
+	   }
+	   
+	   p.scroll{
+		   font-family: 'Cormorant Garamond', serif;
+		   font-size: 13px;
+		   color: #DBDBDB;
+		   text-align: center;
+		   position: fixed; bottom: 0; width: 100%;
+
+	   }
+		
+	   img{ display: block; margin: 0px auto; }
+		
+		img.bottom{ position: fixed; bottom: 0; width: 100%; }
+		
+ img.scale-up-center {
+	-webkit-animation: scale-up-center 1.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+	        animation: scale-up-center 1.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+	</style>
+	
+	<main id="fullpage">
+		 <header>
+	
+    </header>
+	
+	  <section class="section">
+		<!--메뉴아이콘 시작-->
+	<input type="checkbox" id="menuicon">
+<label for="menuicon">
+	
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+</label>
+	<!--메뉴아이콘 끝-->
+	
+	<!--메뉴내용 시작-->
+<div class="sidebar" width=100% height="100%" border="0" cellpadding="0" cellspacing="0">
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="month.html">Month</a></li>
+			<li><a href="#">Toxic</a></li>
+			<li><a href="#">How to make</a></li>
+
+		</ul>
+	</nav></div>	
+	<!--메뉴내용 끝-->
+		  
+		<!--메인페이지시작-->
+			<div style="width: 100%;"><p class="t1">4&#26376;</p>
+			<div ><img class="scale-up-center" style="width: 450px" src="1x/04.jpg">
+			</div>
+			<div class="text-right"; style="width: 100%;"><p class="t2">목<br>련</p>
+			</div>
+		<div style="text-align: center"><p class="scroll">scroll down</p>
+			</div>
+		<!--메인페이지끝--></section>
+		  
+
+		
+		  <section class="section">
+			 
+			  
+			 <div style="width: 100%; float:left;"><p class="t1a">about</p>
+				 </div> 
+		<div class="container" style="width: 70%;">
+		 <div class="row">
+			 <div class="col-md-6">
+				 <p class="d1">이름</p>
+				 <p class="d2">목련</p>
+				 <p class="d1">학명</p>
+				 <p class="d2">Magnolia kobus DC.</p>
+				 <p class="d1">개화시기</p>
+				 <p class="d2">3월 - 4월</p>
+			 </div>
+			 <div class="col-md-6">
+				 <p class="d1">독성</p>
+				 <p class="d2">Non-Toxic</p>
+				 <p class="d1">식용 조건</p>
+				 <p class="d2">꽃잎 식용 가능</p>
+				 <p class="d1">맛</p>
+				 <p class="d2">구수한 맛이 주를 이루고 쓴맛이 조금 느껴진다</p>
+			 </div>
+			  </div>
+		   	</div>
+			  
+			
+		  </section>
+		 
+		  
+		  
+</main>
+</body>
+</html>
